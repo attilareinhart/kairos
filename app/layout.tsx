@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { AppShell } from "./components/app-shell";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Kairos Hello World",
-  description: "A simple baseline Hello World Next.js application."
+  title: "Kairos",
+  description: "A polished app shell with persistent navigation."
 };
 
 export default function RootLayout({
@@ -14,7 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <AppShell>{children}</AppShell>
+      </body>
     </html>
   );
 }
