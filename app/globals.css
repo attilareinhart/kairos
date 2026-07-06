@@ -1,33 +1,35 @@
 @import "tailwindcss";
 
-:root {
-  /* Brighter balanced palette with light background */
-  color-scheme: light;
-  --paper: #FCF8F2;
-  --surface: #FFF7EA;
-  --ink: #253141;
-  --muted: #697182;
-  --header-bg: #2B505F;
-  --header-text: #FDF2E6;
-  --accent: #E3732E;
-  --accent-soft: #74B8B3;
-  --gold: #D9A862;
-  --border: #E7D8C3;
-  --drawer-bg: #375F69;
-}
+@layer base {
+  :root {
+    /* Brighter balanced palette with light background */
+    color-scheme: light;
+    --paper: #FCF8F2;
+    --surface: #FFF7EA;
+    --ink: #253141;
+    --muted: #697182;
+    --header-bg: #2B505F;
+    --header-text: #FDF2E6;
+    --accent: #E3732E;
+    --accent-soft: #74B8B3;
+    --gold: #D9A862;
+    --border: #E7D8C3;
+    --drawer-bg: #375F69;
+  }
 
-* {
-  box-sizing: border-box;
-}
+  * {
+    box-sizing: border-box;
+  }
 
-html,
-body {
-  min-height: 100%;
-}
+  html,
+  body {
+    min-height: 100%;
+  }
 
-body {
-  margin: 0;
-  background: linear-gradient(180deg, rgba(252,248,242,0.98) 0%, var(--paper) 50%, rgba(249,239,220,0.98) 100%);
-  color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
+  body {
+    margin: 0;
+    background: linear-gradient(180deg, rgba(252,248,242,0.98) 0%, var(--paper) 50%, rgba(249,239,220,0.98) 100%);
+    color: var(--ink);
+    font-family: 'Quicksand', Georgia, "Times New Roman", serif;
+  }
 }
