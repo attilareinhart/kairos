@@ -8,6 +8,7 @@ const navigationItems = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/services', label: 'Services' },
+  { href: '/semantic-demo', label: 'Semantic Demo' },
   { href: '/contact', label: 'Contact' }
 ];
 
